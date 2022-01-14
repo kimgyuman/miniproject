@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="350.0">
+         <children>
+            <Label layoutX="157.0" layoutY="45.0" prefHeight="20.0" prefWidth="40.0" text="아이디" />
+            <TextField layoutX="68.0" layoutY="70.0" prefHeight="20.0" prefWidth="220.0" />
+            <Label layoutX="150.0" layoutY="110.0" prefHeight="20.0" prefWidth="50.0" text="비밀번호" />
+            <PasswordField layoutX="68.0" layoutY="130.0" prefHeight="20.0" prefWidth="220.0" />
+            <Label layoutX="155.0" layoutY="162.0" prefHeight="20.0" prefWidth="40.0" text="이름" />
+            <TextField layoutX="68.0" layoutY="189.0" prefHeight="20.0" prefWidth="220.0" />
+            <Label layoutX="151.0" layoutY="233.0" prefHeight="20.0" text="전화번호" />
+            <ChoiceBox layoutX="68.0" layoutY="258.0" prefHeight="20.0" prefWidth="60.0" />
+            <TextField layoutX="133.0" layoutY="258.0" prefHeight="20.0" prefWidth="75.0" />
+            <TextField layoutX="214.0" layoutY="258.0" prefHeight="20.0" prefWidth="75.0" />
+            <Label layoutX="141.0" layoutY="301.0" prefHeight="20.0" text="주민등록번호" />
+            <TextField layoutX="68.0" layoutY="327.0" prefHeight="20.0" prefWidth="100.0" />
+            <TextField layoutX="187.0" layoutY="327.0" prefHeight="20.0" prefWidth="100.0" />
+            <Button layoutX="208.0" layoutY="400.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="OK" />
+            <Button layoutX="68.0" layoutY="400.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="취소" />
+         </children></Pane>
+   </children>
+</AnchorPane>
