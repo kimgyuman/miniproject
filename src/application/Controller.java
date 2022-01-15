@@ -67,7 +67,6 @@ public class Controller implements Initializable {
     // 메인 로그인창 메서드
     public void btMainLogin(ActionEvent e) throws IOException{
     	startDb();
-    	if( )
     	try {
 			Stage stage = new Stage();
 			Parent root = FXMLLoader.load(getClass().getResource("admin_Main.fxml"));
