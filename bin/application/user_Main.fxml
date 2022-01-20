@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
       <BorderPane prefHeight="500.0" prefWidth="350.0">
          <center>
@@ -23,10 +22,10 @@
                         <Cursor fx:constant="DEFAULT" />
                      </cursor>
                   </TextField>
-                  <Button layoutX="190.0" layoutY="180.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="110.0" text="퇴근" />
-                  <Button layoutX="50.0" layoutY="180.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="110.0" text="출근" />
-                  <Button layoutX="120.0" layoutY="360.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="110.0" text="로그아웃" />
-                  <Button layoutX="50.0" layoutY="270.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="252.0" text="시간 조회" />
+                  <Button fx:id="btLeaveOffece" layoutX="190.0" layoutY="180.0" mnemonicParsing="false" onAction="#btLeaveOffice" prefHeight="55.0" prefWidth="110.0" text="퇴근" />
+                  <Button fx:id="btGoOffice" layoutX="50.0" layoutY="180.0" mnemonicParsing="false" onAction="#btGoOffice" prefHeight="55.0" prefWidth="110.0" text="출근" />
+                  <Button fx:id="btuserLogoff" layoutX="120.0" layoutY="360.0" mnemonicParsing="false" onAction="#btuserLogoff" prefHeight="55.0" prefWidth="110.0" text="로그아웃" />
+                  <Button fx:id="btuserRecord" layoutX="50.0" layoutY="270.0" mnemonicParsing="false" onAction="#btUserRecord" prefHeight="55.0" prefWidth="252.0" text="시간 조회" />
                </children>
             </Pane>
          </center>

@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
@@ -10,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
       <Pane layoutY="2.0" prefHeight="500.0" prefWidth="400.0">
          <children>
@@ -19,24 +20,27 @@
                   <Font size="34.0" />
                </font>
             </TextField>
-            <Button layoutX="90.0" layoutY="360.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="가입" />
-            <Button layoutX="220.0" layoutY="360.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="퇴사" />
-            <Button layoutX="220.0" layoutY="415.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="수정" />
-            <Label layoutX="75.0" layoutY="120.0" prefHeight="20.0" prefWidth="50.0" text="이름" />
-            <Label layoutX="75.0" layoutY="160.0" prefHeight="20.0" prefWidth="50.0" text="아이디" />
-            <Label layoutX="75.0" layoutY="200.0" prefHeight="20.0" prefWidth="50.0" text="TEL" />
-            <Label layoutX="75.0" layoutY="240.0" prefHeight="20.0" prefWidth="50.0" text="주민번호" />
-            <TextField layoutX="160.0" layoutY="120.0" prefHeight="21.0" prefWidth="170.0" />
-            <TextField layoutX="160.0" layoutY="160.0" prefHeight="20.0" prefWidth="170.0" />
-            <TextField layoutX="160.0" layoutY="240.0" prefHeight="20.0" prefWidth="80.0" />
-            <TextField layoutX="250.0" layoutY="240.0" prefHeight="20.0" prefWidth="80.0" />
-            <TextField layoutX="210.0" layoutY="200.0" prefHeight="20.0" prefWidth="60.0" />
-            <ChoiceBox layoutX="160.0" layoutY="200.0" prefHeight="20.0" prefWidth="50.0" />
-            <TextField layoutX="270.0" layoutY="200.0" prefHeight="20.0" prefWidth="60.0" />
-            <Button layoutX="130.0" layoutY="316.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="70.0" text="업로드" />
-            <Button layoutX="220.0" layoutY="316.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="70.0" text="다운로드" />
-            <TextField layoutX="130.0" layoutY="280.0" prefHeight="20.0" prefWidth="160.0" />
-            <ChoiceBox layoutX="90.0" layoutY="415.0" prefHeight="40.0" prefWidth="110.0" />
+            <Button fx:id="btCreate" layoutX="90.0" layoutY="360.0" mnemonicParsing="false" onAction="#btCreate" prefHeight="40.0" prefWidth="110.0" text="가입" />
+            <Button fx:id="btDelete" layoutX="220.0" layoutY="360.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="퇴사" />
+            <Button fx:id="btUpdate" layoutX="220.0" layoutY="415.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="수정" />
+            <Label layoutX="75.0" layoutY="105.0" prefHeight="20.0" prefWidth="50.0" text="아이디" />
+            <Label layoutX="75.0" layoutY="175.0" prefHeight="20.0" prefWidth="50.0" text="이름" />
+            <Label layoutX="75.0" layoutY="210.0" prefHeight="20.0" prefWidth="50.0" text="TEL" />
+            <Label layoutX="75.0" layoutY="245.0" prefHeight="20.0" prefWidth="50.0" text="주민번호" />
+            <TextField fx:id="tmId" layoutX="160.0" layoutY="105.0" prefHeight="21.0" prefWidth="170.0" />
+            <TextField fx:id="tmName" layoutX="161.0" layoutY="175.0" prefHeight="20.0" prefWidth="170.0" />
+            <TextField fx:id="tmIdNumber1" layoutX="160.0" layoutY="245.0" prefHeight="20.0" prefWidth="80.0" />
+            <TextField fx:id="tmIdNumber2" layoutX="250.0" layoutY="245.0" prefHeight="20.0" prefWidth="80.0" />
+            <TextField fx:id="tmTel2" layoutX="210.0" layoutY="210.0" prefHeight="20.0" prefWidth="60.0" />
+            <ChoiceBox fx:id="tmTel1" layoutX="160.0" layoutY="210.0" prefHeight="20.0" prefWidth="50.0" />
+            <TextField fx:id="tmTel3" layoutX="270.0" layoutY="210.0" prefHeight="20.0" prefWidth="60.0" />
+            <Button layoutX="130.0" layoutY="314.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="70.0" text="업로드" />
+            <Button layoutX="220.0" layoutY="314.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="70.0" text="다운로드" />
+            <TextField layoutX="130.0" layoutY="285.0" prefHeight="20.0" prefWidth="160.0" />
+            <ChoiceBox fx:id="btChoiceName1" layoutX="90.0" layoutY="415.0" onMouseClicked="#btChoiceName1" prefHeight="40.0" prefWidth="110.0" />
+            <Label layoutX="76.0" layoutY="140.0" prefHeight="20.0" prefWidth="50.0" text="비밀번호" />
+            <TextField fx:id="tmPassword" layoutX="161.0" layoutY="140.0" prefHeight="21.0" prefWidth="170.0" />
+            <ComboBox fx:id="btcomboname1" layoutX="110.0" layoutY="465.0" onAction="#btcomboname1" prefWidth="150.0" />
          </children>
       </Pane>
       <Pane layoutX="400.0" layoutY="4.0" prefHeight="500.0" prefWidth="400.0">
@@ -52,11 +56,13 @@
             <Button layoutX="75.0" layoutY="414.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="수정하기" />
             <TextField layoutX="80.0" layoutY="288.0" prefHeight="100.0" prefWidth="240.0" />
             <Label alignment="CENTER" layoutX="80.0" layoutY="258.0" prefHeight="20.0" prefWidth="50.0" text="비고" />
-            <Label alignment="CENTER" layoutX="105.0" layoutY="116.0" prefHeight="20.0" prefWidth="50.0" text="날짜" />
+            <Label alignment="CENTER" layoutX="179.0" layoutY="116.0" prefHeight="20.0" prefWidth="50.0" text="날짜" />
             <Label alignment="CENTER" layoutX="90.0" layoutY="173.0" prefHeight="20.0" prefWidth="80.0" text="출근 시간" />
-            <DatePicker layoutX="153.0" layoutY="115.0" />
+            <DatePicker layoutX="231.0" layoutY="115.0" prefHeight="21.0" prefWidth="80.0" />
             <Label alignment="CENTER" layoutX="230.0" layoutY="173.0" prefHeight="20.0" prefWidth="80.0" text="퇴근 시간" />
             <ChoiceBox layoutX="230.0" layoutY="210.0" prefHeight="20.0" prefWidth="80.0" />
+            <ChoiceBox layoutX="120.0" layoutY="115.0" prefHeight="20.0" prefWidth="50.0" />
+            <Label alignment="CENTER" layoutX="75.0" layoutY="116.0" prefHeight="20.0" prefWidth="50.0" text="이름" />
          </children>
       </Pane>
    </children>

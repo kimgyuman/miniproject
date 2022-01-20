@@ -11,7 +11,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JDBC Library"/>
 	<classpathentry kind="lib" path="C:/myProject/eclipse-java-2021-12-R-win32-x86_64/javafx-sdk-17.0.1/lib/javafx.base.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
@@ -52,5 +51,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JDBC Library"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
